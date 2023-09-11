@@ -12,19 +12,19 @@
 	--font: "Lucida Sans Typewriter", "Courier New", Courier, monospace;
 	--line-height: 1.15;
 
-	--content-bgcolor: #2C3333;
+	--content-bgcolor: #2e2c35;
 	--content-width: 960px;
 	--content-margin: 15px;
 	--content-text-width: 930px;
 
 	--spacing: 10px;
 
-	--bgcolor: #2C3333;
-	--font-color: #CBE4DE;
-	--header-color: #0E8388;
-	--subheader-color: #f0c674;
+	--bgcolor: #2e2c35;
+	--font-color: #eff0ed;
+	--header-color: #048a94;
+	--subheader-color: #FDC57B;
 	--link-color: lightskyblue;
-	--emph-color: #ED7B7B;
+	--emph-color: #aa477c;
 }
 
 
@@ -102,6 +102,12 @@ h4 {
 	font-size: 18px;
 	font-style: bold;
 	color: var(--emph-color);
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 i {
