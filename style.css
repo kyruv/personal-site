@@ -1,5 +1,5 @@
 :root {
-	--bgcolor: #1d1f21;
+
 	/*--h1-font: "Times New Roman", Times, serif;
 	--header-font: Georgia, serif;
 	--font: "Times New Roman", Times, serif;*/
@@ -11,17 +11,20 @@
 	--header-font: "Lucida Sans Typewriter", "Courier New", Courier, monospace;
 	--font: "Lucida Sans Typewriter", "Courier New", Courier, monospace;
 	--line-height: 1.15;
-	
-	--content-bgcolor: #1d1f21;
+
+	--content-bgcolor: #2C3333;
 	--content-width: 960px;
 	--content-margin: 15px;
 	--content-text-width: 930px;
-	
+
 	--spacing: 10px;
-	
-	--font-color: #c5c8c6;
-	--header-color: #cc6666;
+
+	--bgcolor: #2C3333;
+	--font-color: #CBE4DE;
+	--header-color: #0E8388;
+	--subheader-color: #f0c674;
 	--link-color: lightskyblue;
+	--emph-color: #ED7B7B;
 }
 
 
@@ -30,36 +33,47 @@ body {
 	font-family: var(--font);
 }
 
-a  { 
-	color: var(--link-color); 
-	text-decoration: none; 
+a {
+	color: var(--link-color);
+	text-decoration: none;
 }
-a:hover { text-decoration: underline; }
+
+a:hover {
+	text-decoration: underline;
+}
 
 .anchor {
 	/* spacing same as topblock height */
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
 }
 
-p  {
-	margin-top:    var(--spacing);
+html {
+	color: var(--font-color);
+}
+
+p {
+	margin-top: var(--spacing);
 	margin-bottom: 0px;
 	color: var(--font-color);
 }
+
 ul {
 	margin-top: var(--spacing);
 	margin-bottom: var(--spacing);
 	list-style-type: circle;
 }
+
 li {
 	margin-top: var(--spacing);
 	color: var(--font-color);
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
 	font-family: var(--header-font);
 	font-weight: normal;
 	color: var(--header-color);
@@ -69,29 +83,39 @@ h1 {
 	font-weight: normal;
 	font-family: var(--h1-font);
 	font-size: 52px;
-	color: #c5c8c6;
 }
-h2 { margin-bottom: 10px;
-	font-family: var(--header-font);
+
+h2 {
+	margin-bottom: 10px;
 }
-h3 { 
+
+h3 {
 	margin-top: 12px;
-	margin-bottom: 0px;  
+	margin-bottom: 0px;
 	font-style: italic;
-	font-family: var(--header-font);
-	color: #f0c674;
+	color: var(--subheader-color);
 }
+
+h4 {
+	margin-top: 12px;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-style: bold;
+	color: var(--emph-color);
+}
+
 i {
-	color: #f0c674;
+	color: var(--emph-color);
 }
+
 q {
-	color: #cc6666;
+	color: var(--emph-color);
 }
 
 /* 2. Body classes, in order of appearance */
 
 .wrapper {
-	position:static;
+	position: static;
 	line-height: var(--line-height);
 	color: var(--font-color);
 }
@@ -99,17 +123,18 @@ q {
 .topblock {
 	margin: auto;
 	width: var(--content-width);
-} 
+}
+
 .topcontent {
 	position: fixed;
 	width: var(--content-width);
 	height: 100px;
 	top: -4px;
-	
+
 	background-color: var(--bgcolor);
 	z-index: 1;
 	border-bottom: 1px solid #c5c8c6;
-	
+
 	/*border-bottom: 1px solid #F0F0F0;*/
 }
 
@@ -118,6 +143,7 @@ q {
 	top: -30px;
 	left: 25px;
 }
+
 #menubar {
 	font-family: var(--font);
 	position: absolute;
@@ -133,24 +159,29 @@ q {
 	width: var(--content-width);
 	background-color: var(--content-bgcolor);
 }
+
 .maintext {
 	position: relative;
 	margin-left: var(--content-margin);
 	padding-top: 75px;
 	width: var(--content-text-width);
 }
-.mainsection{
+
+.mainsection {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
 #mephoto {
 	position: absolute;
 	right: 10px;
 	top: 70px;
 }
+
 .lalign {
 	text-align: left;
 }
+
 #copy {
 	text-align: center;
 	font-size: 10pt;
@@ -163,4 +194,4 @@ q {
 	height: calc(100vh - 110px);
 	border-top: 1px solid #c5c8c6;
 	padding-top: 5px;
-} 
+}
